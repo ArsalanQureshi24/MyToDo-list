@@ -1,0 +1,137 @@
+body {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+.todo-content {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  max-width: 600px;
+  margin: 20px auto;
+}
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  margin: 20px 0;
+}
+input[type="text"],
+input[type="date"] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  cursor: pointer;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus {
+  border-color: #667eea;
+  outline: none;
+}
+
+/* Button styling */
+.add-btn {
+  background: #667eea;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.2s, background 0.2s;
+}
+
+button:hover {
+  background: #764ba2;
+  transform: translateY(-2px);
+}
+.app-name {
+  font-family: "Quicksand", sans-serif;
+  color: #764ba2;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  font-weight: 700;
+  margin: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+.todo-box {
+  text-align: left;
+}
+.container {
+  margin-top: 20px;
+}
+
+.row {
+  background: white;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: transform 0.2s;
+}
+
+.row:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Delete button specific styling */
+.btn-danger {
+  background: #ff4757;
+  padding: 8px 16px;
+}
+
+.btn-danger:hover {
+  background: #ff6b81;
+}
+
+/* Welcome Message styling */
+.wlcm-msg {
+  font-family: "Segoe UI", Roboto, "Open Sans", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #667eea;
+  text-align: center;
+  margin: 40px 0;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.wlcm-msg:hover {
+  transform: translateY(-5px);
+  color: #764ba2;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .todo-content {
+    margin: 10px;
+    padding: 20px;
+  }
+
+  .app-name {
+    font-size: 2rem;
+  }
+}
