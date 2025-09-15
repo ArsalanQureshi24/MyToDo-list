@@ -3,7 +3,7 @@ import { TodoItemsContext } from "../store/todo-items-store";
 
 
 import ToDo from "./ToDo";
-function ToDoItems({handleOnClickDelete}) {
+function ToDoItems() {
     const contextObj = useContext(TodoItemsContext);
     const toDoItems = contextObj.toDoItems;
     return (
