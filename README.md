@@ -11,6 +11,9 @@ A modern and user-friendly Todo application built with React and Vite that helps
 - Local storage persistence
 - Keyboard shortcuts support
 - Clean and intuitive interface
+## Live Demo
+
+Check it out [arsalanqureshitodoapp.netlify.app](arsalanqureshitodoapp.netlify.app)
 
 ## Tech Stack 
 
