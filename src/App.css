@@ -125,13 +125,37 @@ button:hover {
 }
 
 /* Responsive design */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .todo-content {
-    margin: 10px;
-    padding: 20px;
+    width: 95%;
+    padding: 20px 15px;
+    margin: 20px auto;
   }
 
-  .app-name {
-    font-size: 2rem;
+  /* Make input container stack on mobile */
+  .input-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  input[type="text"],
+  input[type="date"] {
+    width: 100%;
+    margin: 0;
+  }
+
+  .row {
+    padding: 12px;
+  }
+
+  /* Adjust button size on mobile */
+  .btn-danger {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+  /* Ensure todo item text doesn't overflow */
+  .todo-text {
+    font-size: 14px;
+    width: 100%;
   }
 }
